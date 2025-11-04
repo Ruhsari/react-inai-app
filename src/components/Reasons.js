@@ -8,7 +8,7 @@ export default function Reasons() {
       <Reason title='111' description='222'/>
       <Reason title='333' description='444'/>
       <Reason title='555' description='666'/>
-      <Reason title='777' description='888'/>
+      <Reason title='777' description='666'/>
     </div>
   )
 }
