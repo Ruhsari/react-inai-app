@@ -37,7 +37,7 @@ body {
 .search { margin-left: auto; }
 
 
-/* Причины поступить */
+/* Причины поступить
 .reasons__header {
   display: flex;
   padding-left: 150px;
@@ -62,4 +62,4 @@ body {
   max-width: 800px;
   text-align: left;
   padding-top: 20;
-}
+} */

@@ -37,15 +37,15 @@ export default function Header() {
 
   return (
     <header>
+
         <div className='header'>
             <span className= 'number'> +996 500 549 238</span>
             <span className= 'email'> info@inai.kg</span>
             <span className= 'search'> Поиск...</span>
         </div>
+
         <div className='nav-bar'>
-
           <img src={logo} alt="INAI UNI" className="nav-logo" />
-
           <ul className='nav'>
             <li>Главная</li>
             <li>О нас</li>
@@ -54,17 +54,7 @@ export default function Header() {
             <li>Выпускникам</li>
             <li>Контакты</li>
           </ul>
-
         </div>
-
-        <div className='presentation'> 
-          <div className='about-box'>
-            <h2>INAI: Создаем код будущего</h2>
-            <p>Кыргызско-Германский институт прикладной информатики (КГИПИ) – единственный вуз в образовательном секторе Кыргызстана, специализирующийся в области компьютерных наук.</p>
-            <button>Узнать больше</button>
-          </div>
-        </div>
-
     </header>
   )
 }
