@@ -1,0 +1,45 @@
+/* карточка счета */
+.counters {
+  background: #141A51;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  margin: 50px 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Большой текст KYRGYZ-GERMAN по нижнему краю */
+.counters::before {
+  content: "KYRGYZ-GERMAN";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-40%);
+  
+  font-size: 180px;
+  font-weight: 750;
+  letter-spacing: 9px;
+  color: rgba(255,255,255,0.04);
+  
+  white-space: nowrap; /* в одну строчку */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.counter {
+  z-index: 2;
+  position: relative;
+}
+.num {
+  font-size: 68px;
+  font-weight: 700;
+  display: block;
+}
+.counter p {
+  font-size: 18px;
+  margin-top: 8px;
+  opacity: 0.9;
+}
