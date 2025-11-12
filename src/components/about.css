@@ -1,0 +1,88 @@
+.about-main {
+  padding: 80px 100px;
+  background: #f8f9fa;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-container {
+  max-width: 1256px;
+  margin: 0 auto;
+}
+
+/* === ШАПКА: иконка + подзаголовок === */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.about-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.about-subtitle {
+  font-size: 16px;
+  color: #141A51;
+  font-weight: 400;
+}
+
+/* === Заголовок === */
+.about-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #141A51;
+  margin: 0 0 32px 0;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+/* === Выделенный абзац с синей линией === */
+.about-highlight {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-items: flex-start;
+}
+
+.about-line {
+  width: 4px;
+  height: 80px;
+  background: #141A51;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.about-highlight .about-text {
+  margin: 0;
+  flex: 1;
+}
+
+/* === Обычный текст === */
+.about-text {
+  font-size: 18px;
+  color: #222;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* === Списки === */
+.about-list {
+  margin: 20px 0;
+  padding-left: 24px;
+  font-size: 16px;
+  color: #222;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+}
+
+/* === Нижняя заметка === */
+.about-footer-note {
+  font-size: 16px;
+  color: #7E7E7E;
+  font-style: italic;
+  margin-top: 40px;
+}

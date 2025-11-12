@@ -3,6 +3,7 @@ import photo_1 from '../img/blok_1_1.jpg'
 import photo_2 from '../img/blok_1_2.jpg'
 import React, { useEffect } from 'react';
 import Reasons from './Reasons';
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
@@ -37,16 +38,18 @@ export default function Header() {
 
   return (
     <header>
-
         <div className='header'>
-            <span className= 'number'> +996 500 549 238</span>
-            <span className= 'email'> info@inai.kg</span>
-            <span className= 'search'> Поиск...</span>
+            <span className= 'number'> +996 500 549 238</span>
+            <span className= 'email'> info@inai.kg</span>
+            <span className= 'search'> Поиск...</span>
         </div>
-
         <div className='nav-bar'>
+
           <img src={logo} alt="INAI UNI" className="nav-logo" />
+
           <ul className='nav'>
+            <li><Link to="/" style={{ color: '#141A51', textDecoration: 'none' }}>Главная</Link></li>
+            <li><Link to="/about" style={{ color: '#141A51', textDecoration: 'none' }}>О нас</Link></li>
             <li>Главная</li>
             <li>О нас</li>
             <li>Абитуриентам</li>
@@ -54,9 +57,9 @@ export default function Header() {
             <li>Выпускникам</li>
             <li>Контакты</li>
           </ul>
+
         </div>
     </header>
   )
 }
-
 

@@ -1,18 +1,15 @@
-import Header from "./components/Header";
-import Greetings from "./components/Greetings";
-import Counter_blok from "./components/Counter_blok";
-import Reasons from "./components/Reasons";
-import Presentation from "./components/Presentation";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
-    <div className="wrapper">
-      <Header/>
-      <Presentation/>
-      <Greetings/>
-      <Counter_blok/>
-      <Reasons/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
