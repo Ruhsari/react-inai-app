@@ -13,9 +13,9 @@ export default function Reasons() {
 
       {/* 3 карточки */}
       <div className="reasons-cards">
-        <Reason title={ways[0].title} description={ways[0].description} />
-        <Reason title={ways[1].title} description={ways[1].description} />
-        <Reason title={ways[2].title} description={ways[2].description} />
+        <Reason title={ways[0].title} description={ways[0].description} icon={ways[0].icon} />
+        <Reason title={ways[1].title} description={ways[1].description} icon={ways[1].icon}/>
+        <Reason title={ways[2].title} description={ways[2].description} icon={ways[2].icon}/>
       </div>
     </div>
   )

@@ -54,3 +54,29 @@
 
 
 
+.auth-buttons {
+  display: 20px;
+}
+
+.login-btn, .register-btn {
+  padding: 10px 20px;
+  margin-left: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.login-btn {
+  background: transparent;
+  color: #141A51;
+  border: 2px solid #141A51;
+}
+
+.register-btn {
+  background: #141A51;
+  color: white;
+}
+
+.login-btn:hover { background: #141a51; color: white; }
+.register-btn:hover { background: #0e1340; }

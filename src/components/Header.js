@@ -50,13 +50,17 @@ export default function Header() {
           <ul className='nav'>
             <li><Link to="/" style={{ color: '#141A51', textDecoration: 'none' }}>Главная</Link></li>
             <li><Link to="/about" style={{ color: '#141A51', textDecoration: 'none' }}>О нас</Link></li>
-            <li>Главная</li>
-            <li>О нас</li>
             <li>Абитуриентам</li>
             <li>Студентом</li>
             <li>Выпускникам</li>
             <li>Контакты</li>
           </ul>
+
+        {/* КНОПКИ АВТОРИЗАЦИИ */}
+        <div className="auth-buttons">
+          <Link to="/login" className="login-btn">Вход</Link>
+          <Link to="/register" className="register-btn">Регистрация</Link>
+        </div>
 
         </div>
     </header>

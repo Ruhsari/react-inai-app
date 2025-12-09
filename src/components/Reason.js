@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Reason(props) {
+export default function Reason(props, icon) {
   return (
     <div className='reason-card'>
       <div className="reason-mini-card">
