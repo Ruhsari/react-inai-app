@@ -1,5 +1,5 @@
 // src/pages/auth/Register.js
-import '../../styles/Auth.css';  // или путь до твоего CSS-файла
+import '../../styles/Auth.css';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 

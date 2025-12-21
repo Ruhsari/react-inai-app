@@ -1,0 +1,198 @@
+/* Предыдущие стили заголовков оставь как есть */
+.events-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #141A51;
+  margin: 0 0 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.events-subtitle {
+  font-size: 24px;
+  color: #141A51;
+  margin: 0 0 60px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Кнопки-фильтры */
+.events-filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;               /* чтобы на мобильных переносились */
+}
+
+.filter-btn {
+  padding: 14px 32px;
+  background: white;
+  color: #141A51;
+  border: 1px solid #141A51;
+  border-radius: 7px;           /* сильно закруглённые края */
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: #f0f2ff;
+}
+
+.filter-btn.active {
+  background: #141A51;
+  color: white;
+}
+
+/* Ссылка "Клубы" */
+.filter-btn:link,
+.filter-btn:visited {
+  text-decoration: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .events-filters {
+    gap: 15px;
+  }
+  
+  .filter-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
+
+
+.events-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Основной блок карточки — центрируем и ограничиваем ширину */
+.event-card-full {
+  display: flex;
+  align-items: stretch;          /* ← текст растягивается на высоту фото */
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;             /* ← ограничиваем ширину */
+  margin: 0 auto;                /* ← центрируем блок (отступы от краёв экрана) */
+  background: white;
+  overflow: hidden;
+}
+
+.event-card-full.reversed {
+  flex-direction: row-reverse;
+}
+
+/* Фото — фиксированная высота, занимает половину */
+.event-image-full {
+  flex: 1;
+  height: 500px;                 /* ← высота фиксированная */
+  overflow: hidden;
+  background: white;             /* ← белый фон для пустых мест */
+  display: flex;
+  align-items: center;
+  justify-content: center;       /* ← центрируем фото внутри блока */
+}
+
+.event-image-full img {
+  max-width: 100%;                /* ← фото уменьшается целиком, без обрезки */
+  max-height: 100%;               /* ← сохраняет пропорции */
+  object-fit: contain;           /* ← главное: не обрезает, а вписывает целиком */
+  display: block;
+}
+
+/* Текст — растягивается на всю высоту фото и центрируется вертикально */
+.event-content-full {
+  flex: 1;
+  padding: 60px 80px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       /* ← вертикальное центрирование текста и кнопки */
+}
+
+.event-card-title {
+  font-size: 28px;
+  color: #141A51;
+  margin: 0 0 24px;
+  font-weight: 700;
+}
+
+.event-description {
+  font-size: 16px;
+  color: #7E7E7E;
+  line-height: 1.7;
+  margin: 0 0 40px;
+}
+
+.event-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.event-learn-more-btn {
+  width: 60px;
+  height: 60px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.event-learn-more-btn:hover {
+  background: #141A51;
+}
+
+.event-button-text {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Адаптивность — на планшетах и мобильных */
+@media (max-width: 992px) {
+  .event-card-full {
+    flex-direction: column !important;
+    max-width: 100%;
+    margin: 0 20px;
+  }
+  
+  .event-card-full.reversed {
+    flex-direction: column !important;
+  }
+  
+  .event-image-full {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .event-image-full img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  .event-content-full {
+    padding: 50px 30px;
+    text-align: center;
+  }
+  
+  .event-button-wrapper {
+    justify-content: center;
+  }
+}

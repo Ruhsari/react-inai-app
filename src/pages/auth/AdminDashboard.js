@@ -15,7 +15,7 @@ export default function AdminDashboard() {
       return;
     }
 
-    // Попробуем расшифровать токен (без запроса к серверу)
+    // Попробуем расшифровать токен
     try {
       const payload = JSON.parse(atob(token.split('.')[1]));
       setUserLogin(payload.login);

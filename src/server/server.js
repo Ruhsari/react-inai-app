@@ -64,7 +64,7 @@ app.post('/api/login', (req, res) => {
   // Отправляем refresh в httpOnly cookie
   res.cookie('refreshToken', refreshToken, {
     httpOnly: true,
-    secure: false, // true только на HTTPS
+    secure: false,
     sameSite: 'lax',
     maxAge: 30 * 24 * 60 * 60 * 1000
   });
@@ -86,7 +86,7 @@ app.post('/api/refresh', (req, res) => {
   }
 });
 
-// Выход — чистим куку
+// Выход, очистка куки
 app.post('/api/logout', (req, res) => {
   res.clearCookie('refreshToken');
   res.json({ message: 'Выход выполнен' });

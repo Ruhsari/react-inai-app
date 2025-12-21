@@ -1,5 +1,5 @@
-// src/pages/auth/Login.jsx
-import '../../styles/Auth.css';  // или путь до твоего CSS-файла
+
+import '../../styles/Auth.css';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 export default function Login() {
@@ -16,7 +16,7 @@ export default function Login() {
       const res = await fetch('http://localhost:4000/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include', // важно для кук
+        credentials: 'include',
         body: JSON.stringify(form)
       });
 
