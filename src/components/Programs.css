@@ -1,0 +1,124 @@
+/* Основной контейнер — текст слева, фото справа */
+.programs {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 100px 100px 80px;
+  gap: 80px;
+  min-height: 500px;
+}
+
+/* Текст слева */
+.text-programs {
+  flex: 1;
+  margin-top: 80px;
+  max-width: 600px;
+}
+
+.text-programs h3 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #141A51;
+  margin-bottom: 10px;
+}
+
+.text-programs h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #141A51;
+  margin: 0 0 30px;
+  line-height: 1.1;
+}
+
+/* Контейнер: линия слева от описания и кнопки */
+.text-with-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Синяя полоска */
+.about-line {
+  width: 4px;
+  height: 200px;
+  background: #141A51;
+  flex-shrink: 0;
+}
+
+/* Описание*/
+.text-programs p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #7E7E7E;
+  margin: 0 0 30px 0;
+}
+
+/* Кнопка*/
+.text-programs button {
+  font-family: "Montserrat", sans-serif;
+  background: #141A51;
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+/* Блок с 4 фото справа — горизонтально слева направо */
+.programs-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.program-item {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.program-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+
+.program-item:hover img {
+  transform: scale(1.05);
+}
+
+
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .programs {
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .programs-horizontal {
+    gap: 10px;
+  }
+  
+  .program-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-horizontal {
+    flex-direction: column;
+  }
+  
+  .program-item {
+    height: 250px;
+  }
+}
