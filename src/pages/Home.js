@@ -5,6 +5,7 @@ import Counter_blok from '../components/Counter_blok';
 import Reasons from '../components/Reasons';
 import EventsAndLife from '../components/EventsAndLife';
 import Programs from '../components/Programs';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Reasons />
       <EventsAndLife />
       <Programs />
+      <Footer />
     </>
   );
 }

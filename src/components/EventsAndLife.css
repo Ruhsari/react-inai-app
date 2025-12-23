@@ -23,7 +23,7 @@
   justify-content: center;
   gap: 20px;
   margin-bottom: 60px;
-  flex-wrap: wrap;               /* чтобы на мобильных переносились */
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -31,7 +31,7 @@
   background: white;
   color: #141A51;
   border: 1px solid #141A51;
-  border-radius: 7px;           /* сильно закруглённые края */
+  border-radius: 7px;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
