@@ -34,7 +34,7 @@
 .nav-logo {
   height: 60px;
   margin-left: 20px;
-  margin-right: 500px;
+  margin-right: 390px;
 }
 
 /* НАВИГАЦИЯ */
@@ -43,7 +43,7 @@
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 28px;
+  gap: 40px;
   margin-left: 0;
 }
 
@@ -67,22 +67,37 @@
   color: #3498db;
 }
 
-/* ВЫПАДАЮЩЕЕ МЕНЮ (по клику) */
+/* Выпадающее меню — открывается при наведении на li.dropdown */
+.dropdown {
+  position: relative;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: #141A51;
-  min-width: 260px;
+  min-width: 280px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   padding: 15px 0;
   list-style: none;
-  margin-top: 10px;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, margin-top 0.3s ease;
   z-index: 1000;
 }
 
+/* Открывается при наведении на родительский li */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 10px;
+}
+
+/* Ссылки в меню */
 .dropdown-menu li a {
   display: block;
   padding: 12px 25px;
@@ -97,6 +112,11 @@
   background: rgba(255,255,255,0.15);
   border-radius: 8px;
   margin: 0 10px;
+}
+
+
+.nav li.dropdown > span {
+  cursor: pointer;
 }
 
 /* КНОПКИ АВТОРИЗАЦИИ (на синем хедере) */
